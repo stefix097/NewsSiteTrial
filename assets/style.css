@@ -1,0 +1,211 @@
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+  width: 50%;
+}
+
+.slikahover:hover {
+  background-color: red;
+  border: 2px solid red;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(207, 206, 241);
+  color: #000;
+  transition: 0.5s ease color;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: rgb(175, 174, 252);
+  color: #000;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+#myTopnav {
+  animation: nav-load 1200ms ease-in;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: scale(20%);
+  }
+  50% {
+    transform: scale(120%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+  .topnav {
+    display: block;
+  }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+#more {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+
+#datum {
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+
+.kategorije {
+  color: #f2f2f2;
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 12px;
+}
+
+.kategorije:hover {
+  background-color: rgb(207, 206, 241);
+  color: #000;
+  transition: 0.5s ease color;
+}
+
+.overlay {
+  transition: 0.1s ease;
+  background-color: #008cba;
+  opacity: 1;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+
+.factovi {
+  text-decoration: none;
+  color: #000;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.factovi:hover {
+  background-color: rgb(207, 206, 241);
+}
